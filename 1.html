@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: azure;
+        }
+
+        nav {
+            background-color: rgb(15, 22, 39);
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 67px;
+        }
+
+        /* Center container */
+        .search-box {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Outer box */
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            gap: 5px;
+            transition: 0.2s;
+        }
+
+        /* Hover + focus effect */
+        .search-wrapper:hover {
+            border-color: #4a90e2;
+        }
+
+        .search-wrapper:focus-within {
+            border-color: #4a90e2;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+        }
+
+        /* Input (no border) */
+        .search-box input {
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        /* Button (no border) */
+        .search-box button {
+            padding: 10px 14px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px;
+        }
+
+        .card {
+            border: 2px solid black;
+            width: 250px;
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        Lorem ipsum dolor sit amet | Lorem ipsum | Lorem ipsum
+    </nav>
+
+    <div class="title">
+       Bird Class
+    </div>
+
+    <div class="search-box">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search course or professor...">
+            <button onclick="searchCourse()">Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Course Title</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+
+            <h3>Class Code</h3>
+            <p>Lorem ipsum 1234</p>
+
+            <h3>Professor</h3>
+            <p>Lorem ipsum dolor</p>
+
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+            <h3>Course Title</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+
+            <h3>Class Code</h3>
+            <p>Lorem ipsum 5678</p>
+
+            <h3>Professor</h3>
+            <p>Lorem ipsum dolor</p>
+
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="card">
+            <h3>Course Title</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+
+            <h3>Class Code</h3>
+            <p>Lorem ipsum 9101</p>
+
+            <h3>Professor</h3>
+            <p>Lorem ipsum dolor</p>
+
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Lorem ipsum Instagram | Lorem ipsum YouTube | © Lorem ipsum 2026
+    </footer>
+
+</body>
+</html>
